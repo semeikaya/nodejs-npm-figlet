@@ -1,10 +1,17 @@
 let figlet = require('figlet');
 
-figlet('intocode', function(err, data) {
+
+figlet.text('intocode', {
+    font: 'Ghost',
+    horizontalLayout: 'default',
+    verticalLayout: 'default',
+    width: 80,
+    whitespaceBreak: true
+}, function(err, data) {
     if (err) {
-        console.log('Something went wrong...');
+        console.log('Самсин');
         console.dir(err);
         return;
     }
-    console.log(data)
+    console.log(data);
 });
